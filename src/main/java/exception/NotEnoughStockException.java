@@ -1,4 +1,10 @@
 package exception;
 
-public class NotEnoughStockException {
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class NotEnoughStockException extends Exception{
+    public NotEnoughStockException(String message) {
+        super(message);
+    }
 }

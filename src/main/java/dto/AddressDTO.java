@@ -1,4 +1,11 @@
 package dto;
 
-public class AddressDTO {
+import lombok.Builder;
+
+@Builder
+public record AddressDTO(
+        String town,
+        String street,
+        Integer house
+        ) {
 }
